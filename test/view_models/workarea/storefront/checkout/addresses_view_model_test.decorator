@@ -1,0 +1,19 @@
+require 'test_helper'
+
+module Workarea
+  decorate Storefront::Checkout::AddressesViewModelTest, with: :demo do
+    # Define additional tests based on new functionality or
+    # override tests originally defined in the decorated class for
+    # changes that alter default behavior.
+    #
+    # While calling super to extend a test case is possible, it is
+    # recommended that you add a new test or completely override an
+    # existing test to avoid ambiguity in your test suite.
+    def test_show_email_field
+      checkout = Workarea::Checkout.new(Order.new)
+      step = Workarea::Checkout::Steps::Addresses.new(checkout)
+      view_model = Storefront::Checkout::AddressesViewModel.new(step)
+      assert(view_model.show_email_field?)
+    end
+  end
+end
