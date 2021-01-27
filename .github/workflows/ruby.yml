@@ -17,6 +17,6 @@ jobs:
       - name: Yarn Install
         run: yarn install
       - name: StyleLint
-        run: bash ./scripts/stylelint.sh
+        run: ${GITHUB_WORKSPACE}/scripts/stylelint.sh
       - name: ESLint
         run: yarn run eslint app/**/*.js
