@@ -17,6 +17,8 @@ jobs:
       - name: Yarn Install
         run: yarn install
       - name: StyleLint
-        run: yarn run stylelint app/assets/stylesheets/**/*.scss --custom-formatter ./custom-formatter.ts
+        run: yarn run stylelint app/assets/stylesheets/**/*.scss --formatter json -o test.json 2> /dev/null
+      - name: StyleLint Parser
+        run: cat test.json | node json-parser.js
       - name: ESLint
         run: yarn run eslint app/**/*.js

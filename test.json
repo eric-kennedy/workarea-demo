@@ -1,0 +1,1 @@
+[{"source":"/home/erickennedy/git/workarea-demo/app/assets/stylesheets/fonts.scss","deprecations":[],"invalidOptionWarnings":[],"parseErrors":[],"errored":true,"warnings":[{"line":12,"column":16,"rule":"font-family-no-missing-generic-family-keyword","severity":"error","text":"Unexpected missing generic font family (font-family-no-missing-generic-family-keyword)"}]}]
