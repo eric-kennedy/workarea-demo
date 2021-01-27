@@ -1,0 +1,14 @@
+{
+    "name": "demo",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "eric.kennedy <eric.kennedy@cqlcorp.com>",
+    "devDependencies": {
+      "eslint": "^6.0.0",
+      "eslint-config-recommended": "^4.1.0",
+      "stylelint": "^13.0.0",
+      "stylelint-config-recommended-scss": "^4.2.0",
+      "stylelint-scss": "^3.0.0"
+    }
+  }
+  
