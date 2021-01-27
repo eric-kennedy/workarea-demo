@@ -17,6 +17,6 @@ jobs:
       - name: Yarn Install
         run: yarn install
       - name: StyleLint
-        run: yarn run stylelint app/assets/stylesheets/**/*.scss
+        run: yarn run stylelint app/assets/stylesheets/**/*.scss --formatter tap
       - name: ESLint
         run: yarn run eslint app/**/*.js
